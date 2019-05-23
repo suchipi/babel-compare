@@ -1,0 +1,29 @@
+{
+  "name": "babel-compare",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@types/node": "^12.0.2",
+    "@types/react": "^16.8.18",
+    "@types/react-dom": "^16.8.4",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^4.1.0",
+    "little-api": "^2.0.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.17.1",
+    "react": ">=16.3",
+    "react-boxxy": "^1.0.1",
+    "react-dom": ">=16.3",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "client": "parcel serve --no-hmr client/index.html",
+    "server": "ts-node server/index.ts",
+    "start": "concurrently --names 'client,server' 'yarn client' 'yarn server'"
+  }
+}
