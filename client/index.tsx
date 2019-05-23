@@ -31,7 +31,9 @@ const Row = Box.withProps({
 const Input = ({ state, setState, ...props }) => (
   <textarea
     style={{
-      minHeight: "8em"
+      minHeight: "8em",
+      fontFamily: "monospace",
+      fontSize: "inherit"
     }}
     {...props}
     value={state}
